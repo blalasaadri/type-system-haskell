@@ -1,3 +1,4 @@
 image: haskell:8.6.5
 tasks:
-- command: stack build
+- command: ./build.sh
+- command: ghci
