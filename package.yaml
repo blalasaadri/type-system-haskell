@@ -1,0 +1,47 @@
+name:                type-system-haskell
+version:             0.1.0.0
+github:              "blalasaadri/type-system-haskell"
+license:             MIT
+author:              "Alasdair Collinson"
+maintainer:          "blalasaadri@googlemail.com"
+copyright:           "2019 Alasdair Collinson"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            A Haskell example project for a type systems training
+# category:            Training
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/blalasaadri/type-system-haskell#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  type-system-haskell-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - type-system-haskell
+
+tests:
+  type-system-haskell-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - type-system-haskell
