@@ -1,0 +1,9 @@
+alias la='ls -A'
+alias lh='ls -h'
+alias ll='ls -l'
+alias ls='ls -G --color'
+
+alias build='stack build'
+alias run='stack run'
+alias run-tests='stack test'
+alias clean='stack clean && rm -rf .stack-work'
