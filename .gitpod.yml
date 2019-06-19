@@ -1,4 +1,5 @@
-image: haskell:8.6.5
+image:
+  file: .gitpod.dockerfile
 tasks:
 - before: source .profile
 - command: ./build.sh
