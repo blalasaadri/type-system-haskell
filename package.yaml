@@ -45,3 +45,5 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - type-system-haskell
+    - hspec
+    - QuickCheck
