@@ -1,6 +1,5 @@
 image:
   file: .gitpod.dockerfile
 tasks:
-- before: source .profile
-- command: ./build.sh
+- command: build
 - command: ghci
