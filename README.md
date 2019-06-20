@@ -11,6 +11,7 @@ Once the Gitpod environment has started, you will have the following custom comm
 - `run` will run the application (equivalent to `stack run`)
 - `run-tests` will run the tests (equivalent to `stack test`)
 - `lint` will lint the application (eqivalent to `hlint ${THEIA_WORKSPACE_ROOT:-.}`)
+- `repl` will start GHCi, a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) (equivalent to `stack ghci`)
 
 In addition to these, everything under `$HOME/.local/bin` will be available on the PATH.
 
