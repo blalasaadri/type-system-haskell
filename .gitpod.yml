@@ -1,8 +1,8 @@
 image:
-    file: .gitpod.dockerfile
+  file: .gitpod.dockerfile
 tasks:
-    - command: build
-    - command: stack ghci
+  - command: build
+  - command: stack ghci
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
